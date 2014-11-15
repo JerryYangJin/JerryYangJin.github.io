@@ -1,0 +1,9 @@
+{
+    "name": "se7en",
+    "private": true,
+    "version": "0.0.0",
+    "description": "se7en github page",
+    "dependencies": {
+        "node-static": "*"
+    }
+}
