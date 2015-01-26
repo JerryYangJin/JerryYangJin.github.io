@@ -1,16 +1,17 @@
 <!doctype html>
-<html>
+<html ng-app="jin">
   <head>
+    <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
     <title>Jerry Yang Jin</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/se7en.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/jin.css">
   </head>
-  <body data-spy="scroll" data-target="#affix-nav">
+  <body>
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,47 +20,28 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">Home</a>
+          <a class="navbar-brand" href="/">Chat</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li><a href="/about">About</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li><a>Sign In</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
-    </nav>
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-10">
-
-        </div><!-- col-md-10 -->
-
-        <div class="col-md-2">
-
-          <nav id="affix-nav" class="sidebar">
-            <ul class="nav sidenav" id="sidenav" data-spy="affix" data-offset-top="10">
-              <li><a href="#overview-jumbotron">Jumbotron</a></li>
-              <li><a href="#overview-buttons">Buttons</a>
-                <ul class="nav">
-                  <li><a href="#overview-buttons-default">Default</a></li>
-                </ul>
-              </li>
-              <li><a href="#overview-thumbnails">Thumbnails</a></li>
-            </ul>
-          </nav>
-
-        </div><!-- col-md-2 -->
-
-      </div> <!-- row-->
-
     </div>
 
+    <div ng-view></div>
 
-    <script src="/js/jquery-2.1.0.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/dependencies/jquery.js"></script>
+    <script src="/js/dependencies/angular.js"></script>
+    <script src="/js/dependencies/angular-resource.js"></script>
+    <script src="/js/dependencies/angular-route.js"></script>
+    <script src="/js/dependencies/bootstrap.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/about.js"></script>
+    <script src="/js/controllers/chat.js"></script>
   </body>
 </html>

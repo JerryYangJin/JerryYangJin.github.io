@@ -1,4 +1,4 @@
-jerryyangjin.github.io
-======================
+Jerry Yang Jin
+==============
 
-github page
+Angular.js + Bootstrap + jQuery
