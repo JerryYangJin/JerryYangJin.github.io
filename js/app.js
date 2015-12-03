@@ -1,22 +1,26 @@
 //create a new module
-angular.module('jin',['ngRoute'])
+angular.module('jin',['ui.router'])
 
 //config routing
-.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
-  $routeProvider.
-  when('/', {
-    templateUrl: 'views/chat.html',
-    controller: 'ChatCtrl'
-  });
+.config(['$stateProvider','$urlRouterProvider','$locationProvider',
+        function($stateProvider,$urlRouterProvider,$locationProvider) {
 
-  $routeProvider.
-  when('/about', {
-    templateUrl: 'views/about.html',
-    controller: 'AboutCtrl'
-  });
-
-  $routeProvider.otherwise({redirectTo: '/'});
+  $urlRouterProvider.otherwise('/');
 
   $locationProvider.html5Mode(true);
+
+  $stateProvider
+
+    .state('home', {
+        url: '/',
+        templateUrl: 'views/home.html',
+        controller: 'HomeController'
+    })
+
+    .state('settings', {
+        url: '/settings',
+        templateUrl: 'views/settings.html',
+        controller: 'SettingsController'
+    })
 
 }]);
