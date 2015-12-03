@@ -1,7 +1,8 @@
 angular.module('jin')
-.controller('HomeController',['$location', '$window', '$scope', function($location, $window, $scope){
+.controller('HomeController',['Fusion','$scope', function(Fusion,$scope){
   "use strict";
-  if ($location.protocol() !== 'https') {
-      $window.location.href = $location.absUrl().replace('http', 'https');
-  }
+  Fusion.getColumns('1KxVV0wQXhxhMScSDuqr-0Ebf0YEt4m4xzVplKd4').then(function(cols){
+    $scope.columns = cols.items;
+  })
+
 }]);

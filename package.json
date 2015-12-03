@@ -1,7 +1,7 @@
 {
     "name": "jin",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "my github page",
     "dependencies": {
         "node-static": "*"

@@ -1,6 +1,18 @@
 <div class="container">
-  <div class="jumbotron">
-    <h1>Hello, world!</h1>
-    <p>This is an Angular.js app, enjoy!</p>
-  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Kind</th>
+        <th>Name</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="column in columns">
+        <td>{{column.kind}}</td>
+        <td>{{column.name}}</td>
+        <td>{{column.type}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
