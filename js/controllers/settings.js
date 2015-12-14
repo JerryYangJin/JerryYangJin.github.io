@@ -1,4 +1,4 @@
 angular.module('jin')
-.controller('SettingsController',['$scope', function($scope){
+.controller('SettingsController',['ForceSSL','$scope', function($scope){
   "use strict";
 }]);
