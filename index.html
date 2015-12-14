@@ -11,7 +11,7 @@
     <meta name="keywords" content="Entrepreneurship, Investment, Big data, Internet of things">
     <meta name="google-analytics" content="UA-66067643-1">
     <meta property="fb:admins" content="1354929846" />
-    <meta property="fb:app_id" content="1659730237585243">
+    <meta property="fb:app_id" content="735961666534142">
     <meta property="og:url" content="https://jerryyangjin.com" />
     <meta property="og:site_name" content="Jerry Yang Jin">
     <meta property="og:title" content="Jerry Yang Jin">
@@ -30,6 +30,23 @@
     </script>
   </head>
   <body class="bs-docs-home">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '735961666534142',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div ui-view></div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.17/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
