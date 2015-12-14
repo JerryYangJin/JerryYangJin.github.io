@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
     <meta http-equiv="Content-Language" content="en">
-    <meta name="description" content="Citizen of Internet. Entrepreneur, Investor. Love Big Data, Internet of Things">
+    <meta name="description" content="Citizen of Internet. Dreamer, Entrepreneur, Investor. Love Big Data, Internet of Things">
     <meta name="keywords" content="Entrepreneurship, Investment, Big data, Internet of things">
     <meta name="google-analytics" content="UA-66067643-1">
     <meta property="fb:admins" content="1354929846" />
@@ -15,7 +15,14 @@
     <meta property="og:url" content="https://jerryyangjin.com" />
     <meta property="og:site_name" content="Jerry Yang Jin">
     <meta property="og:title" content="Jerry Yang Jin">
-    <meta property="og:description" content="Citizen of Internet. Entrepreneur, Investor. Love Big Data, Internet of Things">
+    <meta property="og:description" content="Citizen of Internet. Dreamer, Entrepreneur, Investor. Love Big Data, Internet of Things">
+    <meta property="twitter:card" content="summary">
+    <meta name="twitter:site" content="@JerryYangJin" />
+    <meta name="twitter:site:id" content="351401839" />
+    <meta name="twitter:creator" content="@JerryYangJin" />
+    <meta name="twitter:creator:id" content="351401839" />
+    <meta property="twitter:title" content="Jerry Yang Jin">
+    <meta property="twitter:description" content="Citizen of Internet. Dreamer, Entrepreneur, Investor. Love Big Data, Internet of Things">
     <link rel="alternate" href="https://jerryyangjin.com/zh-hans" hreflang="zh-Hans" />
     <link rel="alternate" href="https://jerryyangjin.com/zh-hant" hreflang="zh-Hant" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -31,32 +38,11 @@
   </head>
   <body class="bs-docs-home">
     <script>
-      function statusChangeCallback(response) {
-        console.log('statusChangeCallback');
-        console.log(response);
-        if (response.status === 'connected') {
-          testAPI();
-        } else if (response.status === 'not_authorized') {
-          document.getElementById('status').innerHTML = 'Please log ' +
-            'into this app.';
-        } else {
-          document.getElementById('status').innerHTML = 'Please log ' +
-            'into Facebook.';
-        }
-      }
-      function checkLoginState() {
-        FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
-        });
-      }
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '735961666534142',
           xfbml      : true,
           version    : 'v2.5'
-        });
-        FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
         });
       };
       (function(d, s, id){
@@ -66,14 +52,6 @@
          js.src = "//connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
-       function testAPI() {
-         console.log('Welcome!  Fetching your information.... ');
-         FB.api('/me', function(response) {
-           console.log('Successful login for: ' + response.name);
-           document.getElementById('status').innerHTML =
-             'Thanks for logging in, ' + response.name + '!';
-         });
-       }
     </script>
     <div ui-view></div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.17/angular.min.js"></script>
