@@ -7,8 +7,6 @@ angular.module('jin',['ui.router'])
 
   $urlRouterProvider.otherwise('/');
 
-  $locationProvider.html5Mode(true);
-
   $stateProvider
 
     .state('calendar', {
