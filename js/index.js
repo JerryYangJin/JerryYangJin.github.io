@@ -7,13 +7,11 @@ angular.module('jin',['ui.router'])
 
   $urlRouterProvider.otherwise('/');
 
-  $locationProvider.html5Mode(true);
-
   $stateProvider
 
     .state('index', {
         url: '/',
-        templateUrl: 'index/index.html',
+        templateUrl: 'home.html',
         controller: 'IndexCtrl'
     })
 
