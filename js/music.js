@@ -11,16 +11,10 @@ angular.module('jin',['ui.router'])
 
   $stateProvider
 
-    .state('home', {
+    .state('music', {
         url: '/',
-        templateUrl: 'views/home.html',
-        controller: 'HomeController'
-    })
-
-    .state('settings', {
-        url: '/settings',
-        templateUrl: 'views/settings.html',
-        controller: 'SettingsController'
+        templateUrl: 'music.html',
+        controller: 'MusicCtrl'
     })
 
 }])

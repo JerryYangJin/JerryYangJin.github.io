@@ -40,8 +40,7 @@
 ################################################
 
 config/local.js
-js/jin.js
-js/jin.min.js
+js/tmp
 
 
 
