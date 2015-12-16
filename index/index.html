@@ -7,13 +7,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Jerry Yang Jin</span></a>
+      <a class="navbar-brand" href="https://jerryyangjin.com/">Jerry Yang Jin</span></a>
     </div>
       <nav class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/project/">Project</a></li>
-          <li><a href="/calendar/">Calendar</a></li>
-          <li><a href="/music/">Music</a></li>
+          <li><a href="https://jerryyangjin.com/project/">Project</a></li>
+          <li><a href="https://jerryyangjin.com/calendar/">Calendar</a></li>
+          <li><a href="https://jerryyangjin.com/music/">Music</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
         </ul>
@@ -29,14 +29,16 @@
 </main>
 <div class="bs-docs-featurette">
   <div class="container">
-    <table class="table">
-      <thead><tr><th>Kind</th><th>Name</th><th>Type</th></tr></thead>
-      <tbody>
-        <tr ng-repeat="column in columns">
-          <td>{{column.kind}}</td><td>{{column.name}}</td><td>{{column.type}}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead><tr><th>Kind</th><th>Name</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr ng-repeat="column in columns">
+            <td>{{column.kind}}</td><td>{{column.name}}</td><td>{{column.type}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 <footer class="bs-docs-footer">
