@@ -20,8 +20,15 @@
       </nav>
   </div>
 </header>
-<main class="bs-docs-masthead">
-  <div class="container">
-    <p class="lead">Project</p>
+<div class="container">
+  <div gantt data=data>
+    <gantt-tree></gantt-tree>
+    <gantt-progress></gantt-progress>
+    <gantt-bounds></gantt-bounds>
+    <gantt-table enabled="true"
+                 columns = "['model.from','model.to']">
+    </gantt-table>
+    <gantt-groups></gantt-groups>
+    <gantt-labels></gantt-labels>
   </div>
-</main>
+</div>
