@@ -10,7 +10,7 @@ angular.module('jin')
       eventLimit: true,
       googleCalendarApiKey: 'AIzaSyDjh1p472rNVktbzltiO6NM7DRRNccx-t4',
       events: {
-        googleCalendarId: '2tr6mhk6s5cm2hvktjmprqsptg@group.calendar.google.com',
+        googleCalendarId: 'j47v24g4iidn0bb3sveniofdso@group.calendar.google.com',
         className: 'gcal-event'
       },
       header:{
@@ -20,5 +20,5 @@ angular.module('jin')
       }
     }
   };
-  
+
 }]);
