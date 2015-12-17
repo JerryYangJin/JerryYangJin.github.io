@@ -1,5 +1,5 @@
 //create a new module
-angular.module('jin',['ui.router'])
+angular.module('jin',['ui.router', 'ui.calendar'])
 
 //config routing
 .config(['$stateProvider','$urlRouterProvider','$locationProvider',
