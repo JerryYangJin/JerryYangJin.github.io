@@ -1,5 +1,5 @@
 //create a new module
-angular.module('jin',['ui.router', 'gantt'])
+angular.module('jin',['ui.router','ui.tree','gantt','gantt.table','gantt.progress','gantt.tree','gantt.groups','gantt.bounds','gantt.tooltips'])
 
 //config routing
 .config(['$stateProvider','$urlRouterProvider','$locationProvider',
