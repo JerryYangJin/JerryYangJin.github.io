@@ -21,8 +21,11 @@
       </nav>
   </div>
 </header>
-<main class="bs-docs-masthead">
+<div class="bs-docs-featurette">
   <div class="container">
-    <p class="lead">Music</p>
+    <div ng-controller="QuantCtrl">
+        MathJax TeX: <input type="text" ng-model="expression"><br><br>
+        Equation: <span mathjax-bind="expression"></span>
+    </div>
   </div>
-</main>
+</div>
