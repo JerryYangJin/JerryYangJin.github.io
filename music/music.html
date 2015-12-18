@@ -11,18 +11,23 @@
     </div>
       <nav class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/project/">Project</a></li>
-          <li><a href="/calendar/">Calendar</a></li>
-          <li><a href="/music/">Music</a></li>
           <li><a href="/quant/">Quant</a></li>
+          <li><a href="/calendar/">Calendar</a></li>
+          <li><a href="/project/">Project</a></li>
+          <li class="active"><a href="/music/">Music</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
         </ul>
       </nav>
   </div>
 </header>
-<main class="bs-docs-masthead">
+<div class="bs-docs-featurette">
   <div class="container">
-    <p class="lead">Music</p>
+    <youtube-video video-id="'hTWKbfoikeg'" player="bestPlayer"></youtube-video><br>
+    <div class="btn-group" role="group">
+      <button ng-click="bestPlayer.playVideo()" type="button" class="btn btn-default"><i class="fa fa-play"></i></button>
+      <button ng-click="bestPlayer.pauseVideo()" type="button" class="btn btn-default"><i class="fa fa-pause"></i></button>
+      <button ng-click="bestPlayer.stopVideo()" type="button" class="btn btn-default"><i class="fa fa-stop"></i></button>
+    </div>
   </div>
-</main>
+</div>

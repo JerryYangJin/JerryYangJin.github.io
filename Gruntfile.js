@@ -44,16 +44,17 @@ module.exports = function(grunt) {
       quant: {
         src: [
           'js/quant.js',
+          'js/directives/mathjax.js',
+          'js/directives/chart.js',
           'js/services/*.js',
-          'js/controllers/quant.js',
-          'js/directives/mathjax.js'
+          'js/controllers/quant.js'
         ],
         dest: 'js/tmp/quant.js'
       }
     },
     uglify: {
       options: {
-        banner: '/*! <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        banner: '/*! Jerry Yang Jin */\n'
       },
       dist: {
         files: {

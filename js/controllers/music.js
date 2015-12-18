@@ -1,5 +1,5 @@
 angular.module('jin')
-.controller('MusicCtrl',['ForceSSL','Fusion','$scope', function(ForceSSL,Fusion,$scope){
+.controller('MusicCtrl',['Fusion','$scope', function(Fusion,$scope){
   "use strict";
-
+  $scope.theBestVideo = "hTWKbfoikeg"; 
 }]);

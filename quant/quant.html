@@ -11,10 +11,10 @@
     </div>
       <nav class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/project/">Project</a></li>
+          <li class="active"><a href="/quant/">Quant</a></li>
           <li><a href="/calendar/">Calendar</a></li>
+          <li><a href="/project/">Project</a></li>
           <li><a href="/music/">Music</a></li>
-          <li><a href="/quant/">Quant</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
         </ul>
@@ -27,5 +27,10 @@
         MathJax TeX: <input type="text" ng-model="expression"><br><br>
         Equation: <span mathjax-bind="expression"></span>
     </div>
+  </div>
+</div>
+<div class="bs-docs-featurette">
+  <div class="container">
+    <div ui-chart="data" chart-options="chartOptions"></div>
   </div>
 </div>
