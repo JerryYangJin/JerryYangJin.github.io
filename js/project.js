@@ -15,16 +15,4 @@ angular.module('jin',['ui.router','ui.tree','gantt','gantt.table','gantt.progres
         controller: 'ProjCtrl'
     })
 
-}])
-
-.run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
-   $rootScope
-      .$on('$stateChangeSuccess',
-          function(event){
-
-              if (!$window.ga)
-                  return;
-
-              $window.ga('send', 'pageview', { page: $location.path() });
-      });
 }]);
