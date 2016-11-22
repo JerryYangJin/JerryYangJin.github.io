@@ -60,6 +60,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-video-bg/0.3.4/angular-video-bg.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/index.js"></script>
+    <video-bg id="video" video-id="'DhmdyQdu96M'"></video-bg>
+    <script>
+      $('#video').height($(window).innerHeight()+'px');
+      $(window).on('resize', function(){
+        $('#video').height($(window).innerHeight()+'px');
+      });
+    </script>
     <script type="application/ld+json">
     { "@context" : "http://schema.org",
       "@type" : "Person",
