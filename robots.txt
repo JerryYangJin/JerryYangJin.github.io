@@ -1,9 +1,4 @@
 # Welcome to crawl this site!
 
 User-Agent: *
-Allow: /
-Allow: /calendar/
-Allow: /project/
-Allow: /quant/
-Allow: /music/
-Disallow: /js
+Allow: *

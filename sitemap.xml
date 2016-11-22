@@ -8,28 +8,4 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    <url>
-        <loc>https://jerryyangjin.com/project/</loc>
-        <lastmod>2015-12-17</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://jerryyangjin.com/calendar/</loc>
-        <lastmod>2015-12-17</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://jerryyangjin.com/music/</loc>
-        <lastmod>2015-12-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://jerryyangjin.com/quant/</loc>
-        <lastmod>2015-12-17</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
 </urlset>

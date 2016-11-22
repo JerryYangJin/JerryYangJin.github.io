@@ -50,6 +50,14 @@ module.exports = function(grunt) {
           'js/controllers/quant.js'
         ],
         dest: 'js/tmp/quant.js'
+      },
+      fun: {
+        src: [
+          'js/fun.js',
+          'js/services/*.js',
+          'js/controllers/fun.js'
+        ],
+        dest: 'js/tmp/fun.js'
       }
     },
     uglify: {
@@ -62,7 +70,8 @@ module.exports = function(grunt) {
           'js/tmp/project.min.js': ['<%= concat.project.dest %>'],
           'js/tmp/calendar.min.js': ['<%= concat.calendar.dest %>'],
           'js/tmp/music.min.js': ['<%= concat.music.dest %>'],
-          'js/tmp/quant.min.js': ['<%= concat.quant.dest %>']
+          'js/tmp/quant.min.js': ['<%= concat.quant.dest %>'],
+          'js/tmp/fun.min.js': ['<%= concat.fun.dest %>']
         }
       }
     },
@@ -114,6 +123,16 @@ module.exports = function(grunt) {
             cwd: 'js/tmp',
             src: ['quant.min.js'],
             dest: 'quant'
+          }
+        ]
+      },
+      fun:{
+        files: [
+          {
+            expand: true,
+            cwd: 'js/tmp',
+            src: ['fun.min.js'],
+            dest: 'fun'
           }
         ]
       }
